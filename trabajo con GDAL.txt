@@ -1,0 +1,15 @@
+Comando para recorte en GDAL
+#información de gdal
+gdalinfo 
+#información de una imagen en particular
+gdalinfo (Nombre de laimage.extension)
+
+Tutorial para cortar:
+https://gis.stackexchange.com/questions/45053/gdalwarp-cutline-along-with-shapefile
+
+
+gdalwarp -tr 60 60 -tap -r bilinear -cutline RUTADELARCHIVO.shp -crop_to_cutline
+
+
+
+gdalwarp -cutline cuencaSantiago.shp -crop_to_cutline -dstalpha DEM_cordillera.tif DEM_cordillera_c.tif

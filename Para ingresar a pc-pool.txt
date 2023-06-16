@@ -1,0 +1,79 @@
+- Usar Privatekey3 y publickey3
+-------------------------------------------------------
+- Credenciales:
+IP: 141.89.113.165 Username: palma
+
+
+Credenciales para FileZilla
+
+IP: 141.89.192.222 Username: student Password: zu#2021$
+
+-------------------------------------------------------
+Una vez en el directorio de trabajo, ejecutar lo siguiente:
+
+
+screen -S LabBigData
+conda activate BigData  
+
+#conectarse a esta!
+conda activate myenv
+ 
+
+
+conda activate ORS 
+
+conda config --prepend channels conda-forge
+jupyter notebook --no-browser --port=8890
+
+localhost:8869
+conda install jupyter
+
+jupyter notebook --no-browser --port=8888
+-----------------------------------------------------
+Para copiar los archivos en mi carpeta:BIG DATA
+cp -r /NAS/BigData_SoSe21/Lab05/ /data/laflores/BigData/
+
+cp -r /NAS/BigData_SoSe21/Lab02/ /data/laflores/BigData/
+
+
+Para Optical
+cp -r /NAS/RSM01_ORS_SoSe2021/Data/00_rgi60.zip /data/laflores/Optical/Lab7
+
+/NAS/RSM01_ORS_SoSe2021
+
+cp -r HW3/Lab_02b_clip_to_ROI.ipynb recortes
+
+unzip 00_rgi60.zip -d 00_rgi60
+
+cp -r C:\Users\laflo\Downloads\Calhypso-master\Calhypso\QGIS\Calhypso.py.help
+
+for f in *.tar; do tar xvf "$f" --one-top-level ; done
+------------------------------------------
+Para conectarse a jupyter sin poner el port antes, se puede escribir 
+en una ventana nueva el siguiente comendo:
+
+ssh -N -f -L localhost:(numerode mi pc):localhost:(numeroasignado) plama@wintermute
+
+
+conda create -n myenv python=3.7 notebook numpy matplotlib pandas scipy py6s gdal rasterio geopandas scikit-image
+
+conda install notebook numpy matplotlib pandas scipy py6s gdal rasterio geopandas scikit-image
+
+-------------------
+conda info --envs
+conda list
+conda install rasterio=1.2.3 
+gdal=3.0.2
+hdf5=1.10.4
+notebook=6.4.0
+geopandas=0.8.1
+
+
+
+
+
+
+
+
+Instrucciones:
+https://github.com/UP-RS-ESP/GeologicalRemoteSensing_Manuals/blob/master/Geological_Remote_Sensing_SSH_Setup.pdf

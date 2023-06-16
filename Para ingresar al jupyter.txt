@@ -1,0 +1,46 @@
+
+Creación del nuevo ambiente y actualización:
+
+$ conda create -n proxy python=3.8
+$ conda activate proxy
+$ conda install -c conda-forge ipython jupyter numpy scipy pandas numba matplotlib basemap cartopy scikit-learn
+conda install powerlaw deepgraph scikit-learn
+$ python -c "import numpy, scipy, pandas, numba, matplotlib, mpl_toolkits.basemap, cartopy,
+powerlaw, deepgraph, sklearn"
+
+conda install -c conda-forge Py6S
+
+$ conda update jupyter
+---------------------------
+$ conda activate SDA
+$ jupyter notebook --generate-config
+$ jupyter notebook password
+------------------------
+$ conda activate Py3_PC
+
+---------------------
+Para abrirlo
+conda activate DataAnalysis
+jupyter notebook --no-browser --port=8888
+
+
+conda create -n SDA python=3.8
+
+
+conda activate BigData
+jupyter notebook --no-browser --port=8891
+
+
+
+y en tu navegador:
+localhost:8891
+
+
+localhost:8888
+
+
+
+conda create -n AnalisisEst python=3.8
+conda activate AnalisisEst
+
+
